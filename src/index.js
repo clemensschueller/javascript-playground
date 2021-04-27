@@ -1,15 +1,17 @@
 console.clear()
 const box = document.querySelector('.box')
-const button = document.querySelector('.btn')
+const buttonRotate = document.querySelector('.button-rotate')
+const buttonBackground = document.querySelector('.button-background')
+const buttonRadius = document.querySelector('.button-radius')
 
-button.addEventListener('click', () => {
-  box.classList.add('blue')
+buttonRotate.addEventListener('click', () => {
+  box.classList.toggle('rotate')
 })
-const buttonRemove = document.querySelector('.btn-rm')
-buttonRemove.addEventListener('click', () => {
-  box.classList.remove('blue')
+
+buttonBackground.addEventListener('click', () => {
+  box.classList.toggle('button-bg')
 })
-const buttonToggle = document.querySelector('.tgl')
-buttonToggle.addEventListener('click', () => {
-  box.classList.toggle('blue')
+
+buttonRadius.addEventListener('click', () => {
+  box.classList.toggle('morph')
 })

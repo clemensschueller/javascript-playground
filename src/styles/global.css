@@ -17,3 +17,16 @@ body {
 .blue {
   background: skyblue;
 }
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.button-bg {
+  background: teal;
+  transition: 1s;
+}
+
+.morph {
+  border-radius: 50%;
+}
