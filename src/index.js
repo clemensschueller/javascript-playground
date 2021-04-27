@@ -1,3 +1,15 @@
-import AppHeader from './components/AppHeader'
+console.clear()
+const box = document.querySelector('.box')
+const button = document.querySelector('.btn')
 
-document.body.append(AppHeader('JavaScript App Template'))
+button.addEventListener('click', () => {
+  box.classList.add('blue')
+})
+const buttonRemove = document.querySelector('.btn-rm')
+buttonRemove.addEventListener('click', () => {
+  box.classList.remove('blue')
+})
+const buttonToggle = document.querySelector('.tgl')
+buttonToggle.addEventListener('click', () => {
+  box.classList.toggle('blue')
+})
